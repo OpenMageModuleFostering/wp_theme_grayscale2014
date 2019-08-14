@@ -1,13 +1,13 @@
 @media all and (max-width:479px) {
-#search_mini_form, .form-search, div.search, .header-container, .submenu, .main-container, .home_page_header_block, .nav-container,  .product-view .product-img-box,  
+#search_mini_form, .form-search, div.search, .header-container, .submenu, .main-container, .home_page_header_block, .nav-container,  .product-view .product-img-box,
 .product-view .product-shop {
  width: 100%;
 }
-.welcome-msg, ul.links-advanced, .block-cart-top .qty, .block-cart-top .price, .upper-header .sp, .seotext, 
+.welcome-msg, ul.links-advanced, .block-cart-top .qty, .block-cart-top .price, .upper-header .sp, .seotext,
 #review-form .data-table tr.first th,  .header .logo strong, .data-table th, div.block-cart-top p.amount, .sorter .view-mode label, .product-shop .product-name,
-.add-to-box .or, .more-views h4, .sc-toolbar  {
+.add-to-box .or, .more-views h4, .sc-toolbar, div.block-cart-top .button-small  {
  display: none;
-} 
+}
 .form-search input.input-text {
 width:79%;
 height: 20px;
@@ -66,6 +66,7 @@ div.block-cart-top .cart-link a:link, div.block-cart-top .cart-link a:visited {
  text-align: center;
  margin-left: 0;
  float: left;
+ margin-bottom: 10px;
 }
 .header .quick-access {
  float:left;
@@ -80,7 +81,7 @@ div.block-cart-top .cart-link a:link, div.block-cart-top .cart-link a:visited {
 }
 .header .links li {
  padding:0;
- margin: 1% 5%;
+ margin: 1% 5% 1% 0%;
 }
 .header .links a:link, .header .links a:visited {
  color: #000;
@@ -94,6 +95,7 @@ div.block-cart-top .cart-link a:link, div.block-cart-top .cart-link a:visited {
 div.block-cart-top .cart-link a:hover, .header .links a:hover {
  background: #eaeaea;
 }
+
 /*********************************Footer ******************************/
 .footer, .footer_block .links_block div {
  width: 100%;
@@ -134,7 +136,7 @@ display: block;
  padding-right: 1%;
  float: none;
  text-align: center;
- overflow: hidden;
+ /*overflow: hidden;*/
 }
 .col2-left-layout .col-main, .col2-right-layout .col-main, .col1-layout .col-main {
  width: 98%;
@@ -268,8 +270,8 @@ text-align: center ;
 text-align: center !important;
 }
 .product-view .box-up-sell .products-grid .ratings .rating-box {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 /****************CART ********************/
 .cart .cart-collaterals .col2-set {
@@ -301,16 +303,16 @@ width: 100%;
 }
 /*data table*/
 .data-table td, table.products-grid td, table.brand td  {
-	width: 90%;
-	display: block;
-	clear: both;
-	border: 0 !important;
-	float: left;
-	padding-left: 5%;
-	padding-right: 5%;
+    width: 90%;
+    display: block;
+    clear: both;
+    border: 0 !important;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .data-table td {
-	text-align: left !important;
+    text-align: left !important;
 }
 .data-table textarea {
 display: block;
@@ -318,18 +320,18 @@ width: 90%;
 height: auto;
 }
 .data-table .btn-remove2 {
-	font-size: 12px;
-	line-height: 14px;
-	width: auto;
-	font-weight: bold;
-	text-indent: 16px;
+    font-size: 12px;
+    line-height: 14px;
+    width: auto;
+    font-weight: bold;
+    text-indent: 16px;
 }
 .data-table .buttons-set {
-	margin-top: 5%;
-	margin-bottom: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
 }
 .data-table .buttons-set button {
 margin-bottom: 5%;
@@ -338,13 +340,13 @@ float: left;
 clear: both;
 }
 #shopping-cart-table button {
-	clear: both;
-	display: block;
-	margin-bottom: 5%;
+    clear: both;
+    display: block;
+    margin-bottom: 5%;
 }
 /***************ACCOUNT***********/
 .account-login .content h2 {
-	margin-top: 3%;
+    margin-top: 3%;
 }
 .block-account .block-content li a, .block-account .block-content li.current strong {
   display: block;
@@ -389,7 +391,7 @@ div.tabs_ul li.ui-tabs-selected a:after {
 }
 /*cutom menu*/
 #menu-button a:link, #menu-button a:visited {
-	margin-left: 40%;
+    margin-left: 40%;
 }
 }
 

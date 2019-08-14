@@ -10,6 +10,9 @@ class WP_SmartCatalog_Block_Product_Promo extends Mage_Catalog_Block_Product_Abs
         if (is_null($this->_productCollection)) {
             $categoryId = $this->getCategoryId();
             $category = Mage::getModel('catalog/category')->load($categoryId);
+            if (!$category->getId()) {
+                return Mage::getModel('catalog/category');
+            }
             $storeId = Mage::app()->getStore()->getId();
             $product = Mage::getModel('catalog/product');
             $visibility = array(

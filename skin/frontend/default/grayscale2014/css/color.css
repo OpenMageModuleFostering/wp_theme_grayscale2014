@@ -24,7 +24,7 @@ a:link, a:visited {
 a:hover, div.menu a:hover, a.level1:hover,
 a.level2:hover, a.level3:hover  {
 	text-decoration:none;
-	color: #5d5d5d;
+	color: #666;
 }
 /*orange*/
 .validation-advice  {

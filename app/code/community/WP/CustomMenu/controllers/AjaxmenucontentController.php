@@ -4,7 +4,10 @@ class WP_CustomMenu_AjaxmenucontentController extends Mage_Core_Controller_Front
 {
     public function indexAction()
     {
-        $menu = Mage::helper('custommenu')->getMenuContent();
-        $this->getResponse()->setBody($menu);
+        if ($this->getRequest()->isXmlHttpRequest()) {
+            Mage::helper('custommenu')->initCurrentCategory();
+            $menu = Mage::helper('custommenu')->getMenuContent();
+            $this->getResponse()->setBody(Mage::helper('core')->jsonEncode($menu));
+        }
     }
 }

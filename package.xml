@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package>
   <name>wp_theme_grayscale2014</name>
-  <version>1.2.1</version>
+  <version>1.2.2</version>
   <stability>stable</stability>
   <license uri="http://web-experiment.info/regular_free_license">Web-Experiment.Info Regular Free License</license>
   <channel>community</channel>
   <extends/>
   <summary>Magento Theme - Grayscale Full-Width (Web-Experiment.Info)</summary>
   <description>Magento Theme - Grayscale Full-Width (Web-Experiment.Info)</description>
-  <notes>Папка темы и расширений изменила расположение, переместившись из local в community. Исправилена ошибка при нажатии на кнопку Add to Cart: при включенном кэшировании продукт не всегда добавлялся.</notes>
+  <notes>Добавлен блок корзины в левый сайдбар. Обновлены CSS темы. Проверено на совместимость с Магенто 1.9</notes>
   <authors>
     <author>
       <name>WebAndPeople</name>
@@ -21,24 +21,14 @@
       <email>y.gerassimenko@webandpeople.com</email>
     </author>
   </authors>
-  <date>2014-03-12</date>
-  <time>03:38:30</time>
+  <date>2014-06-14</date>
+  <time>03:55:33</time>
   <contents>
     <target name="mageweb">
       <dir name="app">
         <dir name="code">
           <dir name="community">
             <dir name="WP">
-              <dir name="AddToCartFormKeyIssueFix">
-                <dir name="Model">
-                  <dir name="Checkout">
-                    <file name="Observer.php" hash="7f9f65c95658e53e7dbcafadc98b77a8"/>
-                  </dir>
-                </dir>
-                <dir name="etc">
-                  <file name="config.xml" hash="d3c8e2829ac2cae4a0618c2d160b2ec7"/>
-                </dir>
-              </dir>
               <dir name="BackToTopButton">
                 <dir name="Block">
                   <dir name="System">
@@ -65,26 +55,47 @@
               </dir>
               <dir name="CustomMenu">
                 <dir name="Block">
-                  <file name="Navigation.php" hash="87be6224e66862e0562d30977277503c"/>
-                  <file name="Toggle.php" hash="c0e3299c7ce19041edb481ff09ab22c7"/>
-                  <file name="Topmenu.php" hash="7102b3bf0473dc5ecb0d66c12bfc6a95"/>
+                  <file name="Navigation.php" hash="561bb88d0c92eb585e1a1b34a2218de0"/>
+                  <dir name="System">
+                    <dir name="Config">
+                      <dir name="Renderer">
+                        <file name="Heading.php" hash="24eab1766dc317132ca44564ff26f9a8"/>
+                      </dir>
+                      <dir name="Source">
+                        <file name="Topmenu.php" hash="960ae04b07c8c69b4774b444ca8836df"/>
+                      </dir>
+                    </dir>
+                  </dir>
+                  <file name="Topmenu.php" hash="baf91d07f38b733b3e09957ccab4db4d"/>
                 </dir>
                 <dir name="Helper">
-                  <file name="Data.php" hash="3fc8215a159463e064f9673e6b9c6a7b"/>
+                  <file name="Data.php" hash="facc8faf614ee7fa7501a8f48a0d504f"/>
+                </dir>
+                <dir name="Model">
+                  <file name="Observer.php" hash="fd7b2bd7b8544e7d769dfee097326a43"/>
+                  <dir name="System">
+                    <dir name="Config">
+                      <dir name="Source">
+                        <file name="Popuptype.php" hash="cae99d4e53952b9edf40f5667a168f02"/>
+                        <file name="Position.php" hash="663a74b9ac82ec696b4317f51348deeb"/>
+                        <file name="Staticblock.php" hash="1ac558e25f8cedefccb4fe93818565a6"/>
+                      </dir>
+                    </dir>
+                  </dir>
                 </dir>
                 <dir name="controllers">
-                  <file name="AjaxmenucontentController.php" hash="7e4b0f04147ede2a9405181e1056fd19"/>
-                  <file name="AjaxmobilemenucontentController.php" hash="7b1690de9885838fb6f483136eed3a06"/>
+                  <file name="AjaxmenucontentController.php" hash="8149156483648c590da7d4e977b6829e"/>
+                  <file name="AjaxmobilemenucontentController.php" hash="38ca4e28579d38d697b22e5940c7ecc6"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="de23ba8f0f2ed3ec5e59fcc8eaaeb5ed"/>
-                  <file name="system.xml" hash="c8df283cdc4662e977c4b7479f09e14d"/>
+                  <file name="config.xml" hash="2ff3e0a3ba40334b5f1c257de443b449"/>
+                  <file name="system.xml" hash="3aba15847abf6639d2c26901d58d4cfa"/>
                 </dir>
               </dir>
               <dir name="SmartCatalog">
                 <dir name="Block">
                   <dir name="Product">
-                    <file name="Promo.php" hash="7cff1abba0c08c0e1667686f6824dd8d"/>
+                    <file name="Promo.php" hash="cf7df00bd794709df1ecbd3211ff53a7"/>
                   </dir>
                   <file name="Toggle.php" hash="05f421ec9fae609620f24250d5eb591f"/>
                 </dir>
@@ -95,7 +106,7 @@
                   <file name="Observer.php" hash="f2225790b750f4defc7eb631057cf459"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="37c812ed5c76b4024fe733875cfbbcb7"/>
+                  <file name="config.xml" hash="ed82d59af7244a7b4ba9435ae2563380"/>
                   <file name="system.xml" hash="0958f674a918e0dcc0ed5c70b9ec5a87"/>
                 </dir>
               </dir>
@@ -126,7 +137,7 @@
                   <file name="Data.php" hash="9442514d1b5c864a63b1af4c883df06b"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="ea695f97af77d2cc4de5a0b4aa9c8528"/>
+                  <file name="config.xml" hash="f2f48fada6827558878b2e4b7270b2da"/>
                   <file name="system.xml" hash="f9215090b4719e89943cb57980d33f70"/>
                 </dir>
               </dir>
@@ -140,7 +151,7 @@
                 <dir name="layout">
                   <dir name="webandpeople">
                     <file name="backtotopbutton.xml" hash="6b51d83c28fab664b4ae44e02858a3f3"/>
-                    <file name="custommenu.xml" hash="924c62b611df2b20ef35fccab8c87a86"/>
+                    <file name="custommenu.xml" hash="93dc3f19f392b6eb524ddebabf271ad0"/>
                     <file name="smartcatalog.xml" hash="28cd097f3c9cd8444020f8b8fcf3ba58"/>
                     <file name="smartproductimage.xml" hash="2b72dcc258c4e440716d7416348682da"/>
                   </dir>
@@ -151,8 +162,9 @@
                       <file name="button.phtml" hash="2649afd7988da0af70e36e3b289978a5"/>
                     </dir>
                     <dir name="custommenu">
-                      <file name="menucontent.phtml" hash="c6aacc6cd49e638f08e90803183fed7b"/>
-                      <file name="top.phtml" hash="e57f1dc563d8cd5c7bfd39bdf58afd50"/>
+                      <file name="menucontent.phtml" hash="185449e1085f1aa82dcb30c6731d4348"/>
+                      <file name="sidebar.phtml" hash="761bfda083cfb05e3716d5e2a76f02e0"/>
+                      <file name="top.phtml" hash="8aeca4901afc4115ce3b1b8ba5dc54a0"/>
                     </dir>
                     <dir name="smartcatalog">
                       <file name="list-home.phtml" hash="a73eed68e52d7f4551f161972c7b5040"/>
@@ -166,7 +178,7 @@
               </dir>
               <dir name="grayscale2014">
                 <dir name="layout">
-                  <file name="local.xml" hash="15e2758594852bd4b2ec1f9c73cce3ad"/>
+                  <file name="local.xml" hash="35d9806f03a693b2c39f9588c8401967"/>
                 </dir>
                 <dir name="locale">
                   <dir name="en_US">
@@ -249,7 +261,6 @@
         </dir>
         <dir name="etc">
           <dir name="modules">
-            <file name="WP_AddToCartFormKeyIssueFix.xml" hash="31a1a62638fb9ae53ef35810f09e7d31"/>
             <file name="WP_BackToTopButton.xml" hash="663133d914db5bfd43ebb5b9d7a97761"/>
             <file name="WP_CustomMenu.xml" hash="c367e72a4fd849f0eb777634ca2d422c"/>
             <file name="WP_SmartCatalog.xml" hash="20736117beaebce512604feb64c09c1a"/>
@@ -305,7 +316,7 @@
                     <file name="backtotopbutton.css" hash="fcea466a33cad71f5bf221bc375ae09b"/>
                   </dir>
                   <dir name="custommenu">
-                    <file name="custommenu.css" hash="1502d73576a6c565ec27b565a2de2778"/>
+                    <file name="custommenu.css" hash="2fe55d59d10e6cc04a522b4db79ce815"/>
                   </dir>
                   <dir name="smartcatalog">
                     <file name="smartcatalog.css" hash="9d8800e0a7328fdcee66917c5d0bc3e2"/>
@@ -322,7 +333,8 @@
               <dir name="js">
                 <dir name="webandpeople">
                   <dir name="custommenu">
-                    <file name="custommenu.js" hash="f3a0fc60503e5db502d0e34f7d72c665"/>
+                    <file name="custommenu.js" hash="3c6821215eef7afa77a73d16e0e890a2"/>
+                    <file name="webtoolkit.base64.js" hash="d464b20d386bdc75f1eb05ff4963f446"/>
                   </dir>
                   <dir name="smartcatalog">
                     <file name="jquery.smartCatalog.js" hash="20d97df3d75f663ef794cc7d7b735041"/>
@@ -332,23 +344,23 @@
             </dir>
             <dir name="grayscale2014">
               <dir name="css">
-                <file name="color.css" hash="c9585d28d795329764a960c2f5c2b08f"/>
-                <file name="media-480.css" hash="bed0561575e4cf40f3898d03aa561195"/>
-                <file name="media-800.css" hash="100d5675effdfffe65636684320713ea"/>
-                <file name="media-small.css" hash="2930f72f6284fc47dd991815c551f2d6"/>
-                <file name="skin.css" hash="31eaf20d63a310e9bdf6a4e6ffb2f185"/>
-                <file name="slider.css" hash="a2cd945afce72fe75df05cc7b98c6894"/>
-                <file name="styles-ie.css" hash="71d298472e9b0125e3b50592148ff890"/>
-                <file name="styles.css" hash="0dd13659e6f54c9f8303e87863e17299"/>
+                <file name="color.css" hash="499b6563db95f701e5ed26c52e5f3a35"/>
+                <file name="media-480.css" hash="a0b576595260af4e09ad2bcaeefcdd59"/>
+                <file name="media-800.css" hash="9beb800a61dc55daaff1e049e7afe350"/>
+                <file name="media-small.css" hash="779710cfff826520025f4d5d30cc487c"/>
+                <file name="skin.css" hash="e0631baf591ee2137d3be773c222d17b"/>
+                <file name="slider.css" hash="139ea28fe40e33192cfc55914a9a60d3"/>
+                <file name="styles-ie.css" hash="b2ffea761c097212d19ff620eebfab39"/>
+                <file name="styles.css" hash="b39c2eafd6a712d101156cbc9850f6cc"/>
                 <dir name="webandpeople">
                   <dir name="backtotopbutton">
-                    <file name="backtotopbutton.css" hash="d5cf6c153ec6e6a3e09a0a7631406fa4"/>
+                    <file name="backtotopbutton.css" hash="42e7dc7aac02e82e990084d67a35605e"/>
                   </dir>
                   <dir name="custommenu">
-                    <file name="custommenu.css" hash="d833978dbae40ec40b2fddfa4268e4ef"/>
+                    <file name="custommenu.css" hash="24d0e45ec846bec920991d1c01d6b861"/>
                   </dir>
                   <dir name="smartcatalog">
-                    <file name="smartcatalog.css" hash="d72aaa6bee4a8cec4d5f0232154860c8"/>
+                    <file name="smartcatalog.css" hash="f9a4839a2fb6d08e7179754d67ff3ce9"/>
                   </dir>
                 </dir>
               </dir>

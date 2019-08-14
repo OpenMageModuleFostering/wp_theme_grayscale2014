@@ -1,13 +1,13 @@
 @media all and (min-width:480px) and (max-width:899px) {
 #search_mini_form, .form-search, div.search, .header-container, .submenu, .main-container, .home_page_header_block,
  .header .links, .nav-container,  .footer, .footer_block .links_block div, .footer ul.links, .col3-layout .col-wrapper, .col2-set .col-1, .col2-set .col-2, .col2-set .col-narrow ,
-.col2-set .col-wide, .pager .pages, .pager p.amount, .pager .limiter, .product-view .product-img-box, 
+.col2-set .col-wide, .pager .pages, .pager p.amount, .pager .limiter, .product-view .product-img-box,
 .product-view .product-shop, .cart .cart-collaterals .col2-set,
 .cart .cart-collaterals .col2-set .col-2,
 .col2-set .col-1, .cart .cart-collaterals .col2-set .col-2 {
  width: 100%;
 }
-.welcome-msg, ul.links-advanced, .block-cart-top .qty, .block-cart-top .price, .upper-header .sp, div.block-cart-top p.amount, 
+.welcome-msg, ul.links-advanced, .block-cart-top .qty, .block-cart-top .price, .upper-header .sp, div.block-cart-top p.amount,
 .sorter .view-mode label, div.block-cart-top .actions  {
  display: none;
 }
@@ -90,12 +90,15 @@ div.block-cart-top .cart-link a:link, div.block-cart-top .cart-link a:visited {
  display: block;
  text-align: center;
 }
+.header .switchers {
+    margin-bottom: 10px;
+}
 div.block-cart-top .cart-link a:hover, .header .links a:hover {
  background: #eaeaea;
 }
 /*********************************Footer ******************************/
 .footer .footer_block {
-	padding-top: 0;
+    padding-top: 0;
 }
 .footer_block .links_block div {
  float: none;
@@ -107,7 +110,7 @@ div.block-cart-top .cart-link a:hover, .header .links a:hover {
  padding-top: 0;
 }
 .footer_block h4.title {
- padding-top: 15px; 
+ padding-top: 15px;
 }
 .footer_block .links_block div ul li a:link, .footer_block .links_block div ul li a:visited {
 display: block;
@@ -140,7 +143,7 @@ display: block;
  padding-left: 1%;
  padding-right: 1%;
  float: none;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .col2-right-layout .col-main, .col2-left-layout .col-main  {
  float: none;
@@ -301,7 +304,7 @@ padding: 15px 0px 25px 0px;
  display: none
 }
 .product-view .box-up-sell .products-grid td, .product-view .box-up-sell .products-grid .product-image {
-	text-align: left;
+    text-align: left;
 }
 /****************CART ********************/
 .cart-table .btn-continue, .cart-table .btn-update, .cart-table .btn-empty {
@@ -322,7 +325,7 @@ margin-right: 10px;
 }
 /***************ACCOUNT***********/
 .account-login .content h2 {
-	margin-top: 3%;
+    margin-top: 3%;
 }
 .block-account .block-content li a, .block-account .block-content li.current strong {
  display: block;

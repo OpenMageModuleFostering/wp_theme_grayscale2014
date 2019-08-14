@@ -2,10 +2,9 @@
 <config>
     <modules>
         <WP_CustomMenu>
-            <version>2.5.8</version>
+            <version>3.1.0</version>
         </WP_CustomMenu>
     </modules>
-
     <frontend>
         <routers>
             <custommenu>
@@ -16,6 +15,17 @@
                 </args>
             </custommenu>
         </routers>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <custommenu>
+                        <type>singleton</type>
+                        <model>custommenu/observer</model>
+                        <method>observeLayoutHandleInitialization</method>
+                    </custommenu>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
         <layout>
             <updates>
                 <custommenu>
@@ -24,7 +34,6 @@
             </updates>
         </layout>
     </frontend>
-
     <adminhtml>
         <acl>
             <resources>
@@ -50,7 +59,6 @@
             </resources>
         </acl>
     </adminhtml>
-
     <global>
         <blocks>
             <catalog>
@@ -72,22 +80,26 @@
                 <class>WP_CustomMenu_Helper</class>
             </custommenu>
         </helpers>
+        <models>
+            <custommenu>
+                <class>WP_CustomMenu_Model</class>
+            </custommenu>
+        </models>
     </global>
-
     <default>
         <custom_menu>
             <general>
                 <enabled>1</enabled>
+                <position>top</position>
                 <ajax_load_content>0</ajax_load_content>
-                <move_code_to_bottom>0</move_code_to_bottom>
-                <mobile_menu>1</mobile_menu>
-                <display_empty_categories>1</display_empty_categories>
                 <max_level>3</max_level>
+                <sibebar_draw_max_level>0</sibebar_draw_max_level>
                 <show_home_link>1</show_home_link>
+                <display_empty_categories>1</display_empty_categories>
                 <non_breaking_space>0</non_breaking_space>
-                <ie6_ignore>1</ie6_ignore>
                 <rtl>0</rtl>
-                <version>2.5.8</version>
+                <mobile_menu>1</mobile_menu>
+                <version>3.1.0</version>
             </general>
             <columns>
                 <count>3</count>
@@ -95,10 +107,14 @@
                 <integrate>1</integrate>
             </columns>
             <popup>
+                <delay_displaying>100</delay_displaying>
+                <delay_hiding>100</delay_hiding>
                 <width>0</width>
                 <top_offset>0</top_offset>
-                <delay_displaying>150</delay_displaying>
-                <delay_hiding>100</delay_hiding>
+                <sb_popup_type>relative</sb_popup_type>
+                <sb_width>0</sb_width>
+                <sb_height>0</sb_height>
+                <sb_bottom_offset>0</sb_bottom_offset>
             </popup>
         </custom_menu>
     </default>

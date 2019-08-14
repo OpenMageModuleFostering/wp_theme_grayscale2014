@@ -35,11 +35,13 @@
                     <block_id>right_info_block</block_id>
                 </action>
             </block>
+            <action method="unsetChild"><alias>cart_sidebar</alias></action>
+            <action method="unsetChild"><alias>right.reports.product.viewed</alias></action>
+            <action method="unsetChild"><alias>right.reports.product.compared</alias></action>
+            <action method="unsetChild"><alias>catalog.compare.sidebar</alias></action>
             <remove name="paypal.partner.right.logo" />
-            <remove name="cart_sidebar" />
             <remove name="right.permanent.callout" />
-            <remove name="right.reports.product.viewed" />
-            <remove name="right.reports.product.compared" />
+            <remove name="left.reports.product.viewed" />
         </reference>
         <reference name="footer">
             <remove name="copyright.blog.footer" />
@@ -50,18 +52,23 @@
             </block>
         </reference>
         <reference name="left">
-            <block type="cms/block" name="cms_left_info_block" after="catalogsearch.leftnav">
+            <block type="cms/block" name="cms_left_info_block" after="catalogsearch.leftnav" before="newsletter">
                 <action method="setBlockId">
                     <block_id>left_info_block</block_id>
                 </action>
             </block>
-            <remove name="cart_sidebar" />
-            <block type="reports/product_viewed" name="right.reports.product.viewed.left" template="reports/product_viewed.phtml" />
-            <block type="reports/product_compared" name="right.reports.product.compared.left" template="reports/product_compared.phtml" />
-            <block type="catalog/product_compare_sidebar" before="cart_sidebar" name="catalog.compare.sidebar.left" template="catalog/product/compare/sidebar.phtml" />
+            <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml" before="-">
+                <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+                    <label>Shopping Cart Sidebar Extra Actions</label>
+                </block>
+            </block>
+            <block type="reports/product_viewed" after="cart_sidebar" name="left.reports.product.viewed" template="reports/product_viewed.phtml" />
+            <block type="reports/product_compared" after="cart_sidebar" name="left.reports.product.compared" template="reports/product_compared.phtml" />
+            <block type="catalog/product_compare_sidebar" after="cart_sidebar" name="left.catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml" />
             <remove name="left.permanent.callout" />
-            <!--remove name="currency" /-->
-            <!--remove name="left.newsletter"/-->
         </reference>
         <reference name="header">
             <block type="directory/currency" name="currency_header" as="currency_header" before="-" template="directory/currency.phtml" />
@@ -141,12 +148,6 @@
             </action>
         </reference>
         <!--Begin cart top-bar -->
-        <reference name="left">
-            <remove name="cart_sidebar" />
-        </reference>
-        <reference name="right">
-            <remove name="cart_sidebar" />
-        </reference>
         <reference name="header">
             <block type="checkout/cart_sidebar" name="cart_topbar" template="checkout/cart/topbar.phtml">
                 <action method="addItemRender">
@@ -347,6 +348,19 @@
     </customer_account>
 
     <wp_2columns_right>
+        <reference name="right">
+            <block type="reports/product_viewed" after="catalog.product.related" name="right.reports.product.viewed" template="reports/product_viewed.phtml" />
+            <block type="reports/product_compared" after="catalog.product.related" name="right.reports.product.compared" template="reports/product_compared.phtml" />
+            <block type="catalog/product_compare_sidebar" after="catalog.product.related" name="right.catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml" />
+            <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml" after="catalog.product.related">
+                <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+                    <label>Shopping Cart Sidebar Extra Actions</label>
+                </block>
+            </block>
+        </reference>
         <reference name="root">
             <action method="setTemplate">
                 <template>page/2columns-right.phtml</template>
