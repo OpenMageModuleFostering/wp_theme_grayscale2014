@@ -2,7 +2,7 @@
 <config>
     <modules>
         <WP_SmartCatalog>
-            <version>3.4.1</version>
+            <version>3.4.2</version>
         </WP_SmartCatalog>
     </modules>
     <frontend>
@@ -75,7 +75,7 @@
                 <image_height>135</image_height>
                 <column_width>150</column_width>
                 <display_short_desc>1</display_short_desc>
-                <version>3.4.1</version>
+                <version>3.4.2</version>
             </general>
             <include_jquery_files>
                 <include_jquery>1</include_jquery>
@@ -83,26 +83,4 @@
             </include_jquery_files>
         </smart_catalog>
     </default>
-    <adminhtml>
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <about_webandpeople translate="title" module="smartcatalog">
-                                            <title><![CDATA[Web & People: About Us]]></title>
-                                            <sort_order>1000</sort_order>
-                                        </about_webandpeople>
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>
-    </adminhtml>
 </config>

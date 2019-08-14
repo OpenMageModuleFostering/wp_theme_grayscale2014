@@ -3,7 +3,7 @@
     <modules>
         <WP_ThemeGrayscale2014>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </WP_ThemeGrayscale2014>
     </modules>
 </config>

@@ -2,9 +2,10 @@
 <config>
     <modules>
         <WP_BackToTopButton>
-            <version>1.3.1</version>
+            <version>1.3.2</version>
         </WP_BackToTopButton>
     </modules>
+
     <frontend>
         <layout>
             <updates>
@@ -14,6 +15,7 @@
             </updates>
         </layout>
     </frontend>
+
     <adminhtml>
         <acl>
             <resources>
@@ -39,6 +41,7 @@
             </resources>
         </acl>
     </adminhtml>
+
     <global>
         <blocks>
             <backtotopbutton>
@@ -51,36 +54,15 @@
             </backtotopbutton>
         </helpers>
     </global>
+
     <default>
         <backtotopbutton>
             <general>
                 <enabled>1</enabled>
                 <include_jquery>1</include_jquery>
                 <include_waypoints>1</include_waypoints>
-                <version>1.3.1</version>
+                <version>1.3.2</version>
             </general>
         </backtotopbutton>
     </default>
-    <adminhtml>
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <about_webandpeople translate="title" module="backtotopbutton">
-                                            <title><![CDATA[Web & People: About Us]]></title>
-                                            <sort_order>1000</sort_order>
-                                        </about_webandpeople>
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>
-    </adminhtml>
 </config>

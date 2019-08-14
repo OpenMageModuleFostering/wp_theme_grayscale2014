@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package>
   <name>wp_theme_grayscale2014</name>
-  <version>1.2.0</version>
+  <version>1.2.1</version>
   <stability>stable</stability>
   <license uri="http://web-experiment.info/regular_free_license">Web-Experiment.Info Regular Free License</license>
   <channel>community</channel>
   <extends/>
   <summary>Magento Theme - Grayscale Full-Width (Web-Experiment.Info)</summary>
   <description>Magento Theme - Grayscale Full-Width (Web-Experiment.Info)</description>
-  <notes>Обновлены шаблоны Smart Catalog в составе темы до актуальных версий (list-new.phtml, list-rate.phtml, list-short.phtml). Теперь блоки на базе этих шаблонов визуально грузятся быстрее.</notes>
+  <notes>Папка темы и расширений изменила расположение, переместившись из local в community. Исправилена ошибка при нажатии на кнопку Add to Cart: при включенном кэшировании продукт не всегда добавлялся.</notes>
   <authors>
     <author>
       <name>WebAndPeople</name>
@@ -21,43 +21,26 @@
       <email>y.gerassimenko@webandpeople.com</email>
     </author>
   </authors>
-  <date>2014-02-19</date>
-  <time>05:34:35</time>
+  <date>2014-03-12</date>
+  <time>03:38:30</time>
   <contents>
     <target name="mageweb">
       <dir name="app">
         <dir name="code">
           <dir name="community">
             <dir name="WP">
-              <dir name="SmartProductImage">
-                <dir name="Block">
-                  <file name="About.php" hash="21167fbb67bab27ee0a124ad703ffc39"/>
-                  <file name="Js.php" hash="641151bab311a1b87c1d3d24e9ae7fc3"/>
-                  <dir name="System">
-                    <dir name="Config">
-                      <dir name="Form">
-                        <dir name="Field">
-                          <file name="Imagesizes.php" hash="a7c2a880f74ffb780ac58b2f81da3fc1"/>
-                        </dir>
-                      </dir>
-                    </dir>
+              <dir name="AddToCartFormKeyIssueFix">
+                <dir name="Model">
+                  <dir name="Checkout">
+                    <file name="Observer.php" hash="7f9f65c95658e53e7dbcafadc98b77a8"/>
                   </dir>
                 </dir>
-                <dir name="Helper">
-                  <file name="Data.php" hash="0d0d1ce70098fc4c2f66612775abf79a"/>
-                </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="ad977409ef250cf7f9fcafe39f43a60a"/>
-                  <file name="system.xml" hash="a4751a912359d646f19ad45bb9ea0d96"/>
+                  <file name="config.xml" hash="d3c8e2829ac2cae4a0618c2d160b2ec7"/>
                 </dir>
               </dir>
-            </dir>
-          </dir>
-          <dir name="local">
-            <dir name="WP">
               <dir name="BackToTopButton">
                 <dir name="Block">
-                  <file name="About.php" hash="497d3bab362a56d1fc0234bead76ebb7"/>
                   <dir name="System">
                     <dir name="Config">
                       <dir name="Form">
@@ -76,13 +59,12 @@
                   <file name="Data.php" hash="75249650567f900f901a4f80029eb60d"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="ca7b091991a5933f7ad2f0d0bb8ab9a2"/>
-                  <file name="system.xml" hash="81c75d8151ce5b2a5f445fdddfe8ce96"/>
+                  <file name="config.xml" hash="8bd81dedebee1b2d5a44af530b1b2ddc"/>
+                  <file name="system.xml" hash="ad4c5439eb742cad4cc2f46bda642c1b"/>
                 </dir>
               </dir>
               <dir name="CustomMenu">
                 <dir name="Block">
-                  <file name="About.php" hash="c7770064d9bbd15f841b8f8d65aafe19"/>
                   <file name="Navigation.php" hash="87be6224e66862e0562d30977277503c"/>
                   <file name="Toggle.php" hash="c0e3299c7ce19041edb481ff09ab22c7"/>
                   <file name="Topmenu.php" hash="7102b3bf0473dc5ecb0d66c12bfc6a95"/>
@@ -95,13 +77,12 @@
                   <file name="AjaxmobilemenucontentController.php" hash="7b1690de9885838fb6f483136eed3a06"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="cb9f2e0bb3f6e822f7bb7c88887802fd"/>
-                  <file name="system.xml" hash="64cafadbaacd02165a008a83a4223bb1"/>
+                  <file name="config.xml" hash="de23ba8f0f2ed3ec5e59fcc8eaaeb5ed"/>
+                  <file name="system.xml" hash="c8df283cdc4662e977c4b7479f09e14d"/>
                 </dir>
               </dir>
               <dir name="SmartCatalog">
                 <dir name="Block">
-                  <file name="About.php" hash="5061eb335248b047d13dcbf3877518d5"/>
                   <dir name="Product">
                     <file name="Promo.php" hash="7cff1abba0c08c0e1667686f6824dd8d"/>
                   </dir>
@@ -114,20 +95,39 @@
                   <file name="Observer.php" hash="f2225790b750f4defc7eb631057cf459"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="769652c9fb1359c43fa29406056bcb7a"/>
-                  <file name="system.xml" hash="afd68ea407a1b2d6f6c2124dd240c95c"/>
+                  <file name="config.xml" hash="37c812ed5c76b4024fe733875cfbbcb7"/>
+                  <file name="system.xml" hash="0958f674a918e0dcc0ed5c70b9ec5a87"/>
+                </dir>
+              </dir>
+              <dir name="SmartProductImage">
+                <dir name="Block">
+                  <file name="Js.php" hash="641151bab311a1b87c1d3d24e9ae7fc3"/>
+                  <dir name="System">
+                    <dir name="Config">
+                      <dir name="Form">
+                        <dir name="Field">
+                          <file name="Imagesizes.php" hash="a7c2a880f74ffb780ac58b2f81da3fc1"/>
+                        </dir>
+                      </dir>
+                    </dir>
+                  </dir>
+                </dir>
+                <dir name="Helper">
+                  <file name="Data.php" hash="0d0d1ce70098fc4c2f66612775abf79a"/>
+                </dir>
+                <dir name="etc">
+                  <file name="config.xml" hash="0cb27e949a1276f3fb280879ad670b73"/>
+                  <file name="system.xml" hash="e65232ab1f69be0f823eac505ff94f55"/>
                 </dir>
               </dir>
               <dir name="ThemeGrayscale2014">
-                <dir name="Block">
-                  <file name="About.php" hash="ac9ffb5d1c772daa9462552b429835f0"/>
-                </dir>
+                <dir name="Block"/>
                 <dir name="Helper">
                   <file name="Data.php" hash="9442514d1b5c864a63b1af4c883df06b"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="1c1318e9cb33df658aa19ba97b9c0317"/>
-                  <file name="system.xml" hash="0d2544c0255cc03c00e773041311e0cc"/>
+                  <file name="config.xml" hash="ea695f97af77d2cc4de5a0b4aa9c8528"/>
+                  <file name="system.xml" hash="f9215090b4719e89943cb57980d33f70"/>
                 </dir>
               </dir>
             </dir>
@@ -249,11 +249,12 @@
         </dir>
         <dir name="etc">
           <dir name="modules">
-            <file name="WP_BackToTopButton.xml" hash="4bcdf07a96ebbf20cb85df19f0c1ee4b"/>
-            <file name="WP_CustomMenu.xml" hash="cfe1d1974c20f4ac9f2d5ace4916c5ab"/>
-            <file name="WP_SmartCatalog.xml" hash="77bc83cda667f03755660f47ccb9f31d"/>
+            <file name="WP_AddToCartFormKeyIssueFix.xml" hash="31a1a62638fb9ae53ef35810f09e7d31"/>
+            <file name="WP_BackToTopButton.xml" hash="663133d914db5bfd43ebb5b9d7a97761"/>
+            <file name="WP_CustomMenu.xml" hash="c367e72a4fd849f0eb777634ca2d422c"/>
+            <file name="WP_SmartCatalog.xml" hash="20736117beaebce512604feb64c09c1a"/>
             <file name="WP_SmartProductImage.xml" hash="eb9a93ba59bf69e2ccde917b91c62c19"/>
-            <file name="WP_ThemeGrayscale2014.xml" hash="bcc97242a3e2cad7349a38d00184a2cc"/>
+            <file name="WP_ThemeGrayscale2014.xml" hash="03b5efff80e51ce7f26d701f637c5da0"/>
           </dir>
         </dir>
       </dir>

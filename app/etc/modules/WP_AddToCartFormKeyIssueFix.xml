@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <WP_SmartCatalog>
+        <WP_AddToCartFormKeyIssueFix>
             <active>true</active>
             <codePool>community</codePool>
-        </WP_SmartCatalog>
+        </WP_AddToCartFormKeyIssueFix>
     </modules>
 </config>

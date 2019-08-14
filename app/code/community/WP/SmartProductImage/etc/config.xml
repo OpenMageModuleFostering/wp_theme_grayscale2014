@@ -64,26 +64,4 @@
             </general>
         </smart_product_image>
     </default>
-    <adminhtml>
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <about_webandpeople translate="title" module="smartproductimage">
-                                            <title><![CDATA[Web & People: About Us]]></title>
-                                            <sort_order>1000</sort_order>
-                                        </about_webandpeople>
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>
-    </adminhtml>
 </config>

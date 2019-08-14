@@ -2,7 +2,7 @@
 <config>
     <modules>
         <WP_ThemeGrayscale2014>
-            <version>1.2.0</version>
+            <version>1.2.1</version>
         </WP_ThemeGrayscale2014>
     </modules>
     <global>
@@ -40,37 +40,8 @@
     <default>
         <theme_grayscale2014>
             <general>
-                <version>1.2.0</version>
+                <version>1.2.1</version>
             </general>
         </theme_grayscale2014>
     </default>
-    <adminhtml>
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <about_webandpeople translate="title" module="themegrayscale2014">
-                                            <title><![CDATA[Web & People: About Us]]></title>
-                                            <sort_order>1000</sort_order>
-                                        </about_webandpeople>
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>
-    </adminhtml>
-    <global>
-        <blocks>
-            <themegrayscale2014>
-                <class>WP_ThemeGrayscale2014_Block</class>
-            </themegrayscale2014>
-        </blocks>
-    </global>
 </config>

@@ -3,7 +3,7 @@
     <modules>
         <WP_BackToTopButton>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </WP_BackToTopButton>
     </modules>
 </config>
