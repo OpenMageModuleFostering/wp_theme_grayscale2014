@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package>
   <name>wp_theme_grayscale2014</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <stability>stable</stability>
   <license uri="http://web-experiment.info/regular_free_license">Web-Experiment.Info Regular Free License</license>
   <channel>community</channel>
@@ -21,8 +21,8 @@
       <email>y.gerassimenko@webandpeople.com</email>
     </author>
   </authors>
-  <date>2014-01-23</date>
-  <time>12:22:32</time>
+  <date>2014-01-30</date>
+  <time>16:40:55</time>
   <contents>
     <target name="mageweb">
       <dir name="app">
@@ -134,7 +134,7 @@
                   <file name="Data.php" hash="9442514d1b5c864a63b1af4c883df06b"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="f267e54a53751abf4aeeaeb12a9330b8"/>
+                  <file name="config.xml" hash="8fd3584d4172f8d809e8f248ba6717cc"/>
                   <file name="system.xml" hash="0d2544c0255cc03c00e773041311e0cc"/>
                 </dir>
               </dir>
