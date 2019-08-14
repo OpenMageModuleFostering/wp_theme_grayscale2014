@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package>
   <name>wp_theme_grayscale2014</name>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <stability>stable</stability>
   <license uri="http://web-experiment.info/regular_free_license">Web-Experiment.Info Regular Free License</license>
   <channel>community</channel>
   <extends/>
   <summary>Magento Theme - Grayscale Full-Width (Web-Experiment.Info)</summary>
   <description>Magento Theme - Grayscale Full-Width (Web-Experiment.Info)</description>
-  <notes>Добавлен formkey в формы логинации (login.phtml). Файлы темы перемещены из папки grayscale в папку grayscale2014. Удален блок Popular. Вместо него задействован блок Promo из пакета Smart Catalog Lite.</notes>
+  <notes>Обновлены шаблоны Smart Catalog в составе темы до актуальных версий (list-new.phtml, list-rate.phtml, list-short.phtml). Теперь блоки на базе этих шаблонов визуально грузятся быстрее.</notes>
   <authors>
     <author>
       <name>WebAndPeople</name>
@@ -21,8 +21,8 @@
       <email>y.gerassimenko@webandpeople.com</email>
     </author>
   </authors>
-  <date>2014-02-05</date>
-  <time>03:54:29</time>
+  <date>2014-02-19</date>
+  <time>05:34:35</time>
   <contents>
     <target name="mageweb">
       <dir name="app">
@@ -126,7 +126,7 @@
                   <file name="Data.php" hash="9442514d1b5c864a63b1af4c883df06b"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="66c6f6921dcc5f254963beed7495bb25"/>
+                  <file name="config.xml" hash="1c1318e9cb33df658aa19ba97b9c0317"/>
                   <file name="system.xml" hash="0d2544c0255cc03c00e773041311e0cc"/>
                 </dir>
               </dir>
@@ -237,9 +237,9 @@
                   </dir>
                   <dir name="webandpeople">
                     <dir name="smartcatalog">
-                      <file name="list-new.phtml" hash="b16e31130f07ae864f10095487d1128a"/>
-                      <file name="list-rate.phtml" hash="fc0d37dc83c7c648b17ac6982b465c80"/>
-                      <file name="list-short.phtml" hash="eb84dce02bdb51f252651980e086faae"/>
+                      <file name="list-new.phtml" hash="81e1c7e25687edff506a8fdc2235a366"/>
+                      <file name="list-rate.phtml" hash="5f6fbd9273ee0723637f83868ed771ad"/>
+                      <file name="list-short.phtml" hash="e270ce35eb3034ccd1ea08aae185587f"/>
                     </dir>
                   </dir>
                 </dir>

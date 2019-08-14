@@ -39,7 +39,7 @@
                         <?php else: ?>
                             <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
                         <?php endif; ?>
-                        
+
                     </div>
 
                 </div>
@@ -51,7 +51,7 @@
     </div>
 
     <script type="text/javascript">
-        jqSmartCatalog(window).load(function() {
+        jqSmartCatalog(document).ready(function() {
             jqSmartCatalog('div.smart-columns-home-<?php echo $uid; ?>').wpSmartColumns({columnWidth: <?php echo $_columnWidth; ?>, oneRow: true});
         });
     </script>

@@ -23,12 +23,12 @@
                     <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a></h2>
                     <?php echo $this->getPriceHtml($_product, true) ?>
                 </div>
-				</li>
+            </li>
             <?php endforeach ?>
         </ul>
     </div>
     <script type="text/javascript">
-        jqSmartCatalog(window).load(function() {
+        jqSmartCatalog(document).ready(function() {
             jqSmartCatalog('div.smart-columns-home-<?php echo $uid; ?>').wpSmartColumns({columnWidth: <?php echo $_columnWidth; ?>, oneRow: true});
         });
     </script>
