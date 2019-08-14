@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package>
   <name>wp_theme_grayscale2014</name>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <stability>stable</stability>
   <license uri="http://web-experiment.info/regular_free_license">Web-Experiment.Info Regular Free License</license>
   <channel>community</channel>
   <extends/>
   <summary>Magento Theme - Grayscale Full-Width (Web-Experiment.Info)</summary>
   <description>Magento Theme - Grayscale Full-Width (Web-Experiment.Info)</description>
-  <notes>first release</notes>
+  <notes>Добавлен formkey в формы логинации (login.phtml). Файлы темы перемещены из папки grayscale в папку grayscale2014. Удален блок Popular. Вместо него задействован блок Promo из пакета Smart Catalog Lite.</notes>
   <authors>
     <author>
       <name>WebAndPeople</name>
@@ -21,8 +21,8 @@
       <email>y.gerassimenko@webandpeople.com</email>
     </author>
   </authors>
-  <date>2014-01-30</date>
-  <time>16:40:55</time>
+  <date>2014-02-05</date>
+  <time>03:54:29</time>
   <contents>
     <target name="mageweb">
       <dir name="app">
@@ -54,17 +54,6 @@
             </dir>
           </dir>
           <dir name="local">
-            <dir name="Mage">
-              <dir name="Catalog">
-                <dir name="Block">
-                  <dir name="Product">
-                    <file name="Manufacturer.php" hash="6867232df0df4ed8ddda210dccb5285b"/>
-                    <file name="Popular.php" hash="eb7acba0d3729beef0614047fe4940c1"/>
-                    <file name="Promo.php" hash="58dfa97e333072506ddff169d2409040"/>
-                  </dir>
-                </dir>
-              </dir>
-            </dir>
             <dir name="WP">
               <dir name="BackToTopButton">
                 <dir name="Block">
@@ -113,6 +102,9 @@
               <dir name="SmartCatalog">
                 <dir name="Block">
                   <file name="About.php" hash="5061eb335248b047d13dcbf3877518d5"/>
+                  <dir name="Product">
+                    <file name="Promo.php" hash="7cff1abba0c08c0e1667686f6824dd8d"/>
+                  </dir>
                   <file name="Toggle.php" hash="05f421ec9fae609620f24250d5eb591f"/>
                 </dir>
                 <dir name="Helper">
@@ -122,7 +114,7 @@
                   <file name="Observer.php" hash="f2225790b750f4defc7eb631057cf459"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="7f63aff8c2916d50c6b55a8d9470ab03"/>
+                  <file name="config.xml" hash="769652c9fb1359c43fa29406056bcb7a"/>
                   <file name="system.xml" hash="afd68ea407a1b2d6f6c2124dd240c95c"/>
                 </dir>
               </dir>
@@ -134,7 +126,7 @@
                   <file name="Data.php" hash="9442514d1b5c864a63b1af4c883df06b"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="8fd3584d4172f8d809e8f248ba6717cc"/>
+                  <file name="config.xml" hash="66c6f6921dcc5f254963beed7495bb25"/>
                   <file name="system.xml" hash="0d2544c0255cc03c00e773041311e0cc"/>
                 </dir>
               </dir>
@@ -172,7 +164,7 @@
                   </dir>
                 </dir>
               </dir>
-              <dir name="grayscale">
+              <dir name="grayscale2014">
                 <dir name="layout">
                   <file name="local.xml" hash="15e2758594852bd4b2ec1f9c73cce3ad"/>
                 </dir>
@@ -209,7 +201,7 @@
                   </dir>
                   <dir name="customer">
                     <dir name="form">
-                      <file name="login.phtml" hash="efd0efae7b00e9933ec81e3a200ebb5f"/>
+                      <file name="login.phtml" hash="1a59f02bd7b48f954f36116f2bf1829d"/>
                     </dir>
                   </dir>
                   <dir name="directory">
@@ -337,7 +329,7 @@
                 </dir>
               </dir>
             </dir>
-            <dir name="grayscale">
+            <dir name="grayscale2014">
               <dir name="css">
                 <file name="color.css" hash="c9585d28d795329764a960c2f5c2b08f"/>
                 <file name="media-480.css" hash="bed0561575e4cf40f3898d03aa561195"/>

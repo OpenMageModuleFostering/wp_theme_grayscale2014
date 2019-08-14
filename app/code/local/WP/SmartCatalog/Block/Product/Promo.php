@@ -1,6 +1,6 @@
 <?php
 
-class Mage_Catalog_Block_Product_Promo extends Mage_Catalog_Block_Product_Abstract
+class WP_SmartCatalog_Block_Product_Promo extends Mage_Catalog_Block_Product_Abstract
 {
     protected $_productsCount = null;
     protected $_productCollection = null;
