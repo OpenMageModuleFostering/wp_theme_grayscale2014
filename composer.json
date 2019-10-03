@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/wp_theme_grayscale2014",
+    "name": "OpenMageModuleFostering\/wp_theme_grayscale2014",
     "type": "magento-module",
     "license": "Web-Experiment.Info-Regular-Free-License",
     "homepage": "",
     "description": "Magento Theme - Grayscale Full-Width (Web-Experiment.Info)",
     "authors": [
-    {
-        "name": "WebAndPeople",
-        "email": "design@webandpeople.com"
-    }
-],
+        {
+            "name": "WebAndPeople",
+            "email": "design@webandpeople.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
